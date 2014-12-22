@@ -1,8 +1,8 @@
 <?php
  
-add_action( 'wp_footer', 'wp_footer_example' );
+add_action( 'wp_footer', 'cwp_footer_report' );
  
-function wp_footer_example() {
+function cwp_footer_report() {
     $stat = sprintf( '%d queries in %.3f seconds, using %.2fMB memory',
         get_num_queries(),
         timer_stop( 0, 3 ),
